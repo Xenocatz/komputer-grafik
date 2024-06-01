@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>faiz-bruteforce</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-form">
+        <h2>
+          <i class="fa-solid fa-chart-line"></i>Algoritma pembentukan garis
+          dengan Bruteforce
+        </h2>
+        <h4>By Faiz</h4>
+        <form id="inputForm">
+          <div class="awal">
+            <h3>Titik awal (X<sub>1</sub>,Y<sub>1</sub>)</h3>
+            <div class="inputan">
+              <div class="input-xy">
+                <input type="number" id="x1" name="x1" required />
+                <label for="x1">X<sub>1</sub></label>
+              </div>
+              <div class="input-xy">
+                <input type="number" id="y1" name="y1" required />
+                <label for="y1">Y<sub>1</sub></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="akhir">
+            <h3>Titik akhir (X<sub>2</sub>,Y<sub>2</sub>)</h3>
+            <div class="inputan">
+              <div>
+                <input type="number" id="x2" name="x2" required />
+                <label for="x2">X<sub>2</sub></label>
+              </div>
+              <div class="input-xy">
+                <input type="number" id="y2" name="y2" required />
+                <label for="y2">Y<sub>2</sub></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="tombol">
+            <button type="button" onclick="drawLine()">buat</button>
+            <button id="reset1" type="button" onclick="resetForm()">
+              reset
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+    </div>
+
+    <script src="js/ini.js"></script>
+  </body>
+</html>
