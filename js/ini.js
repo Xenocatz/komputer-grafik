@@ -72,10 +72,10 @@ function drawLine() {
   });
 }
 
-function resetForm() {
-  document.getElementById("inputForm").reset();
-  if (chartInstance) {
-    chartInstance.destroy();
-    chartInstance = null;
-  }
-}
+// function resetForm() {
+//   document.getElementById("inputForm").reset();
+//   if (chartInstance) {
+//     chartInstance.destroy();
+//     chartInstance = null;
+//   }
+// }

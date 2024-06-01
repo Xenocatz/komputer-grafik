@@ -76,8 +76,8 @@ label {
   position: relative;
   cursor: text;
   z-index: 2;
-  top: -47px;
-  left: 11px;
+  top: 0%;
+  left: -50%;
   font-size: 20px;
   font-weight: bold;
   background: transparent;
@@ -89,7 +89,7 @@ label {
 input:focus + label,
 input:valid + label {
   font-size: 19px;
-  top: -82px;
+  top: -65%;
 }
 input:focus + label {
   color: blue;
@@ -107,31 +107,31 @@ input:focus {
   left: 30px;
 }
 
-.tombol {
-  position: relative;
-  left: 20px;
-  top: 50px;
-}
-
 button {
+  position: relative;
+  top: 66px;
   margin: 10px;
   height: 30px;
   width: 60px;
-  background-color: #00cc85;
-  border-radius: 10px;
-  border: 1px solid #19503b;
+  box-sizing: border-box;
+  background-color: #1cc49d;
+  border-radius: 40px;
+  border: 1px solid;
   color: #fff;
+  transition:0.5s ease;
 }
 button:hover {
-  background-color: #00b871;
+  color: #1cc49d;
+  background: transparent;
 }
 
-#reset1 {
+/* #reset1 {
   background-color: #ff0000;
 }
 #reset1:hover {
-  background-color: #cc0000;
-}
+  color: #ff0000;
+  background: transparent;
+} */
 
 /* bagian grafik */
 canvas {
